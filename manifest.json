@@ -1,21 +1,14 @@
 {
-  "name": "Dusty Couple Budgeting",
-  "short_name": "Dusty Budgeting",
-  "description": "Personal and household budgeting",
-  "start_url": "./",
+  "name": "Dusty Couple Budgeting App",
+  "short_name": "Dusty Budget",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "icons": [
-    {
-      "src": "./icons/dusty-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "./icons/dusty-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "dusty-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "dusty-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "dusty-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
