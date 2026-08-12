@@ -3488,4 +3488,16 @@ function boot() {
   window.addEventListener("beforeunload", () => { store.set(KEY, JSON.stringify(S)); });
 }
 boot();
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+            .then(() => {
+                console.log("Dusty Couple Budgeting service worker registered.");
+            })
+            .catch(error => {
+                console.error("Service worker registration failed:", error);
+            });
+    });
+}
 </script></body></html>
